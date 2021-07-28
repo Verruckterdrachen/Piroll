@@ -455,6 +455,28 @@ textarea.input {
   text-align: center;
 }
 
+.section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+@media (max-width: 1200px) {
+  .section {
+    padding-top: calc(40px + 50 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .section {
+    padding-bottom: calc(40px + 50 * ((100vw - 320px) / 880));
+  }
+}
+
+.body {
+  text-align: center;
+}
+.body *:last-child {
+  margin-bottom: 0;
+}
+
 .title {
   color: inherit;
   font-size: 30px;
@@ -987,7 +1009,7 @@ body.ie ._ibg img {
   }
 }
 .banner__container *:last-child {
-  margin: 0px 0px 0px 0px;
+  margin-bottom: 0;
 }
 .banner__title {
   margin: 0px 0px 32px 0px;
@@ -996,6 +1018,17 @@ body.ie ._ibg img {
   margin: 0px 0px 38px 0px;
 }
 .banner__button {
+  margin: 0px 0px 30px 0px;
+}
+
+.about__title {
+  margin: 0px 0px 15px 0px;
+}
+.about__text {
+  max-width: 622px;
+  margin: 0px auto 30px auto;
+}
+.about__image {
   margin: 0px 0px 30px 0px;
 }
 

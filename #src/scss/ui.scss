@@ -1,4 +1,14 @@
 //<ОСНОВНОЙ БЛОК>====================================================================================================
+.section {
+  @include adaptiv-value("padding-top", 90, 40, 1);
+  @include adaptiv-value("padding-bottom", 90, 40, 1);
+}
+.body {
+  text-align: center;
+  *:last-child{
+   margin-bottom: 0;
+  }
+}
 .title {
   color: inherit;
   font-size: 30px;
