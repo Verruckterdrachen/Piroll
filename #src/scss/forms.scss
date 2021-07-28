@@ -18,15 +18,21 @@
 
 //<BUTTONS (a.btn+tab)>====================================================================================================
 .button {
+  color: #fff;
+  background-color: $primaryColor;
+  font-size: 12px;
+  min-height: 50px;
+  text-transform: uppercase;
 	display: inline-flex;
-	padding: 0px 0px;
-	@media (any-hover: hover) {
-		&:hover {
-		}
-	}
-	&._fw {
-		width: 100%;
-	}
+  justify-content:center;
+  align-items: center;
+	padding: 0px 40px;
+  transition: background-color 0.3s ease 0s;
+  @media (any-hover: hover){
+    &:hover{
+      background-color: $primaryColorHover;
+    }
+  }
 }
 //</BUTTONS>====================================================================================================
 
