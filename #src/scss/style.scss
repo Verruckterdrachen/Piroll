@@ -91,5 +91,26 @@ body {
 	flex: 1 1 auto;
 }
 //===================================================================================================================================
-
+.half-block {
+  &__container {
+    padding: 0;
+    @media (min-width:$md3+px){
+      display: flex;
+    }
+  }
+  &__container-rev {
+    flex-direction: row-reverse;
+  }
+  &__content {
+    min-width: 50%;
+    padding: 0px 15px;
+  }
+  &__image {
+    background-color: #e9e9e9;
+    flex: 0 0 50%;
+    padding: 0px 0px 570/1170 * 100% 0px;
+    min-width: calc(50% + ((100vw - 1170px) / 2));
+    img{max-width: 100%;}
+  }
+}
 //</ОСНОВНОЙ БЛОК>====================================================================================================
