@@ -113,4 +113,41 @@ body {
     img{max-width: 100%;}
   }
 }
+//============================================================================
+.numbers {
+  color: #fff;
+  background-color: $primaryColor;
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__item {
+    display: inline-grid;
+    padding: 15px 0px;
+    grid-template: auto auto / 85px 1fr;
+    @media (max-width:$md2+px){
+      min-width: 280px;
+    }
+    @media (max-width:$md3+px){
+      grid-template: auto auto / auto 1fr;
+    }
+  }
+  &__image {
+    text-align: center;
+    align-self: center;
+    grid-row: span 2;
+    @media (max-width:$md3+px){
+      padding: 0px 20px 0px 0px; 
+    }
+  }
+  &__title {
+    font-size: 18px;
+    margin: 0px 0px 2px/18px * 1em 0px;
+  }
+  &__text {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}
 //</ОСНОВНОЙ БЛОК>====================================================================================================

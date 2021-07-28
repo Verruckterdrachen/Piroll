@@ -1127,3 +1127,46 @@ body.ie ._ibg img {
 .half-block__image img {
   max-width: 100%;
 }
+
+.numbers {
+  color: #fff;
+  background-color: #10c9c3;
+}
+.numbers__body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.numbers__item {
+  display: inline-grid;
+  padding: 15px 0px;
+  grid-template: auto auto/85px 1fr;
+}
+@media (max-width: 991.98px) {
+  .numbers__item {
+    min-width: 280px;
+  }
+}
+@media (max-width: 767.98px) {
+  .numbers__item {
+    grid-template: auto auto/auto 1fr;
+  }
+}
+.numbers__image {
+  text-align: center;
+  align-self: center;
+  grid-row: span 2;
+}
+@media (max-width: 767.98px) {
+  .numbers__image {
+    padding: 0px 20px 0px 0px;
+  }
+}
+.numbers__title {
+  font-size: 18px;
+  margin: 0px 0px 0.1111111111em 0px;
+}
+.numbers__text {
+  font-size: 12px;
+  text-transform: uppercase;
+}
