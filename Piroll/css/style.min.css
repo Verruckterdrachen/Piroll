@@ -1185,7 +1185,7 @@ body.ie ._ibg img {
 @media (max-width: 479.98px) {
   .services__column {
     flex: 0 0 80%;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 26px 0px;
     padding: 0px 10px;
   }
 }
@@ -1234,6 +1234,14 @@ body.ie ._ibg img {
 @media (max-width: 1200px) {
   .section {
     padding-bottom: calc(40px + 50 * ((100vw - 320px) / 880));
+  }
+}
+.section_services {
+  padding-bottom: 90px;
+}
+@media (max-width: 1200px) {
+  .section_services {
+    padding-bottom: calc(10px + 80 * ((100vw - 320px) / 880));
   }
 }
 

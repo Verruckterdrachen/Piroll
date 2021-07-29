@@ -93,6 +93,9 @@ body {
 .section {
   @include adaptiv-value("padding-top", 90, 40, 1);
   @include adaptiv-value("padding-bottom", 90, 40, 1);
+  &_services {
+    @include adaptiv-value("padding-bottom", 90, 10, 1);
+  }
 }
 .body {
   display: flex;
