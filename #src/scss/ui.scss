@@ -19,6 +19,31 @@
   font-size: 18px;
   line-height: 28 / 18 * 100%;
 }
+//============================================================================
+.swiper-pagination-bullets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 20px;
+}
+.swiper-pagination-bullet {
+  flex: 0 0 6px;
+  height: 6px;
+  background-color: #b0e8e6;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 6px;
+  border-radius: 50%;
+  transition: all 0.3s ease 0s;
+}
+.swiper-pagination-bullet-active {
+  flex: 0 0 10px;
+  height: 10px;
+  background-color: #fff;
+}
 //</ОСНОВНОЙ БЛОК>====================================================================================================
 
 //<ГОТОВЫЕ КЛАССЫ>====================================================================================================
