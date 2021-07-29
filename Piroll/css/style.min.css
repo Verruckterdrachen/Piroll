@@ -1326,7 +1326,16 @@ body.ie ._ibg img {
 
 .work__row {
   display: flex;
-  flex-wrap: wrap;
+}
+@media (min-width: 479.98px) {
+  .work__row {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 479.98px) {
+  .work__row {
+    overflow: auto;
+  }
 }
 .work__row :nth-child(1) {
   background-color: #838383;
@@ -1364,9 +1373,9 @@ body.ie ._ibg img {
     padding: 0px 0px 44.2477876106% 0px;
   }
 }
-@media (max-width: 590px) {
+@media (max-width: 479.98px) {
   .work__column {
-    flex: 0 0 100%;
+    flex: 0 0 85%;
     padding: 0px 0px 88.4955752212% 0px;
   }
 }

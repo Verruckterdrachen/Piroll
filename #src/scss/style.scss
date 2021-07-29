@@ -171,7 +171,12 @@ body {
 .work {
   &__row {
     display: flex;
-    flex-wrap: wrap;
+    @media (min-width:$md4+px){
+      flex-wrap: wrap;
+    }
+    @media (max-width:$md4+px){
+      overflow: auto; 
+    }
     :nth-child(1) {
       background-color: #838383;
     }
@@ -204,8 +209,8 @@ body {
       flex: 0 0 50%; 
       padding: 0px 0px 600/1356 * 100% 0px;
     }
-    @media (max-width:590px){
-      flex: 0 0 100%; 
+    @media (max-width:$md4+px){
+      flex: 0 0 85%; 
       padding: 0px 0px 1200/1356 * 100% 0px;
     }
     img{max-width: 100%;}
