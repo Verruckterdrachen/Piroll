@@ -25,7 +25,7 @@ $fontSize: 16;
 
 //<ПЕРЕМЕННЫЕ>==========================================================================================================
 $minWidth: 320px;
-$maxWidth: 1920;
+$maxWidth: 1356;
 $maxWidthContainer: 1200;
 $md1: $maxWidthContainer + 12;
 $md2: 991.98;
@@ -90,6 +90,16 @@ body {
 .page {
 	flex: 1 1 auto;
 }
+.section {
+  @include adaptiv-value("padding-top", 90, 40, 1);
+  @include adaptiv-value("padding-bottom", 90, 40, 1);
+}
+.body {
+  text-align: center;
+  *:last-child{
+   margin-bottom: 0;
+  }
+}
 //===================================================================================================================================
 .half-block {
   &__container {
@@ -148,6 +158,79 @@ body {
   &__text {
     font-size: 12px;
     text-transform: uppercase;
+  }
+}
+//============================================================================
+.work {
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    :nth-child(1) {
+      background-color: #838383;
+    }
+    :nth-child(2) {
+      background-color: #dddddd;
+    }
+    :nth-child(3) {
+      background-color: $grayLightColor;
+    }
+    :nth-child(4) {
+      background-color: #838383;
+    }
+    :nth-child(5) {
+      background-color: #dddddd;
+    }
+    :nth-child(6) {
+      background-color: $grayLightColor;
+    }
+    :nth-child(7) {
+      background-color: #838383;
+    }
+    :nth-child(8) {
+      background-color: #dddddd;
+    }
+  }
+  &__column {
+    flex: 0 0 25%;
+    padding: 0px 0px 300/1356 * 100% 0px;
+    @media (max-width:$md2+px){
+      flex: 0 0 50%; 
+      padding: 0px 0px 600/1356 * 100% 0px;
+    }
+    @media (max-width:590px){
+      flex: 0 0 100%; 
+      padding: 0px 0px 1200/1356 * 100% 0px;
+    }
+    img{max-width: 100%;}
+    cursor: pointer;
+    position: relative;
+    &::after{
+      content:'';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease 0s;
+      background: rgba(37, 37, 37, 0.8) url('../img/works/work_h.png') center no-repeat;
+      background-size: 48/341 * 100%;
+    }
+    &_primary {
+      &::after{
+        background: rgba(16, 201, 195, 0.85) url('../img/works/work_h.png') center no-repeat;
+        background-size: 48/341 * 100%;
+      }
+    }
+    @media (any-hover: hover){
+      &:hover{
+        &::after {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
   }
 }
 //</ОСНОВНОЙ БЛОК>====================================================================================================
