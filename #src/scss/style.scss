@@ -95,6 +95,10 @@ body {
   @include adaptiv-value("padding-bottom", 90, 40, 1);
 }
 .body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   *:last-child{
    margin-bottom: 0;
@@ -233,4 +237,5 @@ body {
     }
   }
 }
+
 //</ОСНОВНОЙ БЛОК>====================================================================================================

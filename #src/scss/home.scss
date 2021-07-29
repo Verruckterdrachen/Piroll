@@ -126,5 +126,42 @@
   }
 }
 //============================================================================
+.work-process {
+  &__container {}
+  &__body {}
+  &__title {
+    margin: 0px 0px 15px 0px;
+  }
+  &__text {
+    max-width: 505px;
+    margin: 0px auto 50px auto;
+  }
+  &__video {
+    width: 100%;
+    padding: 0px 0px 571/1170 * 100% 0px;
+    background-color: #e9e9e9;
+    position: relative;
+    min-height: 250px;
+  }
+  &__icon{
+    content:'';
+    position: absolute;
+    @include adaptiv-value("width", 85, 60, 1);
+    @include adaptiv-value("height", 85, 60, 1);
+    top: 50%;
+    left: 50%;
+    background: $primaryColor url('../img/arrow.png') center no-repeat;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease 0s;
+    @media (any-hover: hover){
+      &:hover{
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+}
 
 //====================================================================================================
