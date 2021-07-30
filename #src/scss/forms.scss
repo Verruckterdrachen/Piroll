@@ -1,16 +1,33 @@
 //<FORM ()>====================================================================================================
+.form-block {
+  display: flex;
+  justify-content: center;
+}
 .form {
+  flex: 0 1 670px;
 	&__row {
-	}
-	&__column {
+    margin: 0px 0px 30px 0px;
 	}
 	&__line {
+    &:first-child{
+      @media (min-width:$md4+px){ 
+        display: flex;
+        justify-content: space-between; 
+      }
+    } 
+    &:not(:last-child) {margin: 0px 0px 30px 0px;}
 	}
-	&__input {
-	}
-	&__button {
-	}
+  &__column {
+    @media (min-width:$md4+px){
+      width: 320/670 * 100%; 
+    }
+    @media (max-width:$md4+px){
+      margin: 0px 0px 30px 0px; 
+    }
+  }
 	&__error {
+    color: $primaryColor;
+    padding: 10px 0px 0px 0px;
 	}
 }
 
@@ -144,14 +161,18 @@ textarea {
 	width: 100%;
 	display: block;
 	padding: 0px 20px;
+  height: 50px;
+  color: $grayColor;
 	&._focus {
 	}
 	&._error {
+
 	}
 }
 textarea.input {
 	resize: none;
-	padding: 0px 0px;
+	padding: 20px;
+  height: 170px;
 }
 //</INPUT>====================================================================================================
 

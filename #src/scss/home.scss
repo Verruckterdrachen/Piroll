@@ -101,7 +101,7 @@
   }
 }
 //============================================================================
-.page-work {
+.home-work {
   &__load {
     min-height: 100px;
     display: flex;
@@ -118,6 +118,7 @@
     color: #8e8e8e;
     text-transform: uppercase;
     transition: color 0.3s ease 0s;
+    font-weight: 700;
     @media (any-hover: hover){
       &:hover{
         color: $mainColor;
@@ -212,6 +213,7 @@
   &__title {
     font-size: 12px;
     text-transform: uppercase;
+    font-weight: 700;
     margin: 0px 0px 12px 0px;
   }
   &__text {
@@ -273,5 +275,7 @@
   }
 }
 //============================================================================
-
+.home-project {
+  background-color: $grayLightColor;
+}
 //====================================================================================================
