@@ -1287,6 +1287,34 @@ body.ie ._ibg img {
   margin: 0px 0px 30px 0px;
 }
 
+.clients {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+@media (max-width: 1200px) {
+  .clients {
+    padding-top: calc(20px + 12 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .clients {
+    padding-bottom: calc(20px + 12 * ((100vw - 320px) / 880));
+  }
+}
+.clients__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0px -30px;
+}
+.clients__column {
+  padding: 30px;
+}
+.clients__image {
+  cursor: pointer;
+}
+
 .page {
   flex: 1 1 auto;
 }

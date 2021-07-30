@@ -254,4 +254,24 @@
     margin: 0px 0px 30px 0px;
   }
 }
+//============================================================================
+.clients {
+  @include adaptiv-value("padding-top", 32, 20, 1);
+  @include adaptiv-value("padding-bottom", 32, 20, 1);
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px -30px;
+  }
+  &__column {
+    padding: 30px;
+  }
+  &__image {
+    cursor: pointer;
+  }
+}
+//============================================================================
+
 //====================================================================================================

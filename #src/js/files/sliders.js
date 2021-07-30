@@ -76,4 +76,3 @@ if (document.querySelector('.slider-testimonials__body')) {
     }
   });
 }
-
