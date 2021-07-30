@@ -1035,6 +1035,124 @@ body.ie ._ibg img {
 	}
 }
 */
+.footer {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #1d1d1d;
+}
+@media (max-width: 1200px) {
+  .footer {
+    padding-top: calc(40px + 50 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .footer {
+    padding-bottom: calc(40px + 50 * ((100vw - 320px) / 880));
+  }
+}
+.footer__body {
+  display: flex;
+  align-items: flex-start;
+  font-family: "Nunito Sans";
+  color: #bcbcbc;
+  font-size: 15px;
+  line-height: 160%;
+}
+@media (max-width: 767.98px) {
+  .footer__body {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 479.98px) {
+  .footer__body {
+    flex-direction: column;
+  }
+}
+.footer__main {
+  flex: 0 1 50%;
+}
+@media (max-width: 767.98px) {
+  .footer__main {
+    flex: 1 1 auto;
+  }
+}
+@media (max-width: 479.98px) {
+  .footer__main {
+    margin: 0px 0px 30px 0px;
+  }
+}
+.footer__title {
+  font-family: "Montserrat";
+  font-size: 18px;
+  color: #fff;
+  margin: 0px 0px 20px 0px;
+}
+@media (min-width: 767.98px) {
+  .footer__contacts {
+    flex: 0 1 33.333%;
+  }
+}
+@media (max-width: 479.98px) {
+  .footer__contacts {
+    margin: 0px 0px 30px 0px;
+  }
+}
+.footer__menu {
+  flex: 0 1 45%;
+}
+
+.contacts-footer {
+  display: flex;
+  flex-direction: column;
+}
+.contacts-footer__item {
+  color: inherit;
+  transition: color 0.3s ease 0s;
+}
+.contacts-footer__item:not(:last-child) {
+  margin: 0px 0px 5px 0px;
+}
+@media (any-hover: hover) {
+  .contacts-footer__item:hover {
+    color: #fff;
+  }
+}
+
+.menu-footer {
+  display: flex;
+}
+@media (max-width: 767.98px) {
+  .menu-footer {
+    width: 100%;
+    flex: 1 1 100%;
+    justify-content: center;
+    margin: 30px 0px 0px 0px;
+  }
+}
+.menu-footer__column {
+  padding: 0px 20px;
+}
+@media (min-width: 767.98px) {
+  .menu-footer__column {
+    flex: 0 1 50%;
+  }
+  .menu-footer__column:nth-child(2) {
+    flex: 1 1 100%;
+  }
+}
+.menu-footer__list li:not(:last-child) {
+  margin: 0px 0px 5px 0px;
+}
+.menu-footer__link {
+  color: inherit;
+  transition: color 0.3s ease 0s;
+}
+@media (any-hover: hover) {
+  .menu-footer__link:hover {
+    color: #fff;
+  }
+}
+
 .banner {
   display: flex;
   min-height: 100vh;
@@ -1143,6 +1261,7 @@ body.ie ._ibg img {
 .skills__sub-title {
   font-size: 12px;
   text-transform: uppercase;
+  font-weight: 700;
 }
 .skills__sub-title span {
   margin: 0px 0px 0px 10px;

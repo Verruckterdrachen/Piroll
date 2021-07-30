@@ -1,5 +1,94 @@
-footer {
-}
 //====================================================================================================
-
+.footer {
+  @include adaptiv-value("padding-top", 90, 40, 1);
+  @include adaptiv-value("padding-bottom", 90, 40, 1);
+  background-color: $mainColor;
+  &__container {}
+  &__body {
+    display: flex;
+    align-items: flex-start;
+    font-family: "Nunito Sans";
+    color: #bcbcbc;
+    font-size: 15px;
+    line-height: 24 / 15 * 100%;
+    @media (max-width:$md3+px){
+      flex-wrap: wrap; 
+    }
+    @media (max-width:$md4+px){
+      flex-direction: column; 
+    }
+  }
+  &__main {
+    flex: 0 1 50%;
+    @media (max-width:$md3+px){
+      flex: 1 1 auto;
+    }
+    @media (max-width:$md4+px){
+      margin: 0px 0px 30px 0px; 
+    }
+  }
+  &__title {
+    font-family: "Montserrat";
+    font-size: 18px;
+    color: #fff;
+    margin: 0px 0px 20px 0px;
+  }
+  &__contacts {
+    @media (min-width:$md3+px){
+      flex: 0 1 33.333%; 
+    }
+    @media (max-width:$md4+px){
+      margin: 0px 0px 30px 0px; 
+    }
+  }
+  &__menu {
+    flex: 0 1 45%;
+  }
+}
+.contacts-footer {
+  display: flex;
+  flex-direction: column;
+  &__item {
+    color: inherit;
+    &:not(:last-child) {margin: 0px 0px 5px 0px;}
+    transition: color 0.3s ease 0s;
+    @media (any-hover: hover){
+      &:hover{
+        color: #fff;
+      }
+    }
+  }
+}
+.menu-footer {
+  display: flex;
+  @media (max-width:$md3+px){
+    width: 100%; 
+    flex: 1 1 100%;
+    justify-content: center;
+    margin: 30px 0px 0px 0px;
+  }
+  &__column {
+    padding: 0px 20px;
+    @media (min-width:$md3+px){
+      flex: 0 1 50%;
+      &:nth-child(2) {
+        flex: 1 1 100%;
+      } 
+    }
+  }
+  &__list {
+    li {
+      &:not(:last-child) {margin: 0px 0px 5px 0px;}
+    }
+  }
+  &__link {
+    color: inherit;
+    transition: color 0.3s ease 0s;
+    @media (any-hover: hover){
+      &:hover{
+        color: #fff;
+      }
+    }
+  }
+}
 //====================================================================================================
