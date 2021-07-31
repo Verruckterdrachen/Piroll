@@ -1621,6 +1621,60 @@ body.ie ._ibg img {
   margin: 0px 0px 5px 0px;
 }
 
+.project-nav {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media (max-width: 1200px) {
+  .project-nav {
+    padding-top: calc(30px + 10 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .project-nav {
+    padding-bottom: calc(30px + 10 * ((100vw - 320px) / 880));
+  }
+}
+.project-nav__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.project-nav__item {
+  flex: 0 1 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 120%;
+}
+.project-nav__item:first-child {
+  justify-content: flex-start;
+}
+.project-nav__item:first-child span {
+  padding: 0px 0px 0px 15px;
+}
+.project-nav__item:last-child {
+  text-align: right;
+  justify-content: flex-end;
+}
+.project-nav__item:last-child img {
+  transform: rotate(-180deg);
+}
+.project-nav__item:last-child span {
+  padding: 0px 15px 0px 0px;
+}
+.project-nav__item span {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #1d1d1d;
+}
+@media (any-hover: hover) {
+  .project-nav__item:hover {
+    text-decoration: underline;
+  }
+}
+
 .page {
   flex: 1 1 auto;
 }
