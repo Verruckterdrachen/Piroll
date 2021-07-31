@@ -1,4 +1,23 @@
 //====================================================================================================
+.person {
+  margin: 100px 0px 0px 0px;
+  transition: margin 0.3s ease 0s;
+  background-color: #3e3e3e;
+  @media (max-width:$md3+px){
+    margin: 70px 0px 0px 0px; 
+  }
+  &__title {
+    color: #fff;
+    margin: 0px 0px 20px 0px;
+  }
+  &__text {
+    color: #fff;
+    max-width: 530px;
+    margin: 0px auto;
+    margin: 0px auto 15px auto;
+  }
+}
+//============================================================================
 .about-me {
   &__content {
     display: flex;

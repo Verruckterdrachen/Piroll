@@ -98,6 +98,10 @@ body {
   &_services {
     @include adaptiv-value("padding-bottom", 42, 10, 1);
   }
+  &_person {
+    @include adaptiv-value("padding-top", 100, 40, 1);
+    @include adaptiv-value("padding-bottom", 110, 40, 1);  
+  }
 }
 .body {
   display: flex;

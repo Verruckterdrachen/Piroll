@@ -1510,6 +1510,27 @@ body.ie ._ibg img {
   margin: 0px auto 20px auto;
 }
 
+.person {
+  margin: 100px 0px 0px 0px;
+  transition: margin 0.3s ease 0s;
+  background-color: #3e3e3e;
+}
+@media (max-width: 767.98px) {
+  .person {
+    margin: 70px 0px 0px 0px;
+  }
+}
+.person__title {
+  color: #fff;
+  margin: 0px 0px 20px 0px;
+}
+.person__text {
+  color: #fff;
+  max-width: 530px;
+  margin: 0px auto;
+  margin: 0px auto 15px auto;
+}
+
 .about-me__content {
   display: flex;
   flex-direction: column;
@@ -1571,6 +1592,20 @@ body.ie ._ibg img {
 @media (max-width: 1200px) {
   .section_services {
     padding-bottom: calc(10px + 32 * ((100vw - 320px) / 880));
+  }
+}
+.section_person {
+  padding-top: 100px;
+  padding-bottom: 110px;
+}
+@media (max-width: 1200px) {
+  .section_person {
+    padding-top: calc(40px + 60 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .section_person {
+    padding-bottom: calc(40px + 70 * ((100vw - 320px) / 880));
   }
 }
 
