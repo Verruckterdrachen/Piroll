@@ -1510,6 +1510,43 @@ body.ie ._ibg img {
   margin: 0px auto 20px auto;
 }
 
+.about-me__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 767.98px) {
+  .about-me__content {
+    text-align: center;
+  }
+}
+.about-me__body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media (min-width: 767.98px) {
+  .about-me__body {
+    padding-left: 11.1111111111%;
+  }
+}
+.about-me__title {
+  margin: 0px 0px 30px 0px;
+}
+.about-me__text {
+  margin: 0px 0px 25px 0px;
+}
+.about-me__text p:not(:last-child) {
+  margin: 0px 0px 20px 0px;
+}
+.about-project__body {
+  align-items: center;
+}
+.about-project__text {
+  max-width: 545px;
+  margin: 0px auto;
+}
+
 .page {
   flex: 1 1 auto;
 }
