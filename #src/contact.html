@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('_head.html',{
+	"title":"Contact"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('_header.html',{
+        "link":"3"
+      })
+			<main class="page">
+        <section class="section contact">
+          <div class="contact__container _container">
+            <div class="contact__body">
+              <div class="contact__content">
+                <h2 class="contact__title title">Contact info:</h2>
+                <div class="contact__text text">
+                  <p>
+                    To give give beginning divide, cattle. Give moving 
+                    won't, there the abundantly she'd she'd brought air 
+                    upon. Light hath subdue. Life days creature upon 
+                    first heaven gathering dry.
+                  </p>
+                </div>
+                <div class="contact__info">
+                  <div class="contact__item"><span>Address:</span> 10111 Santa Monica Boulevard, LA</div>
+                  <div class="contact__item"><span>Phone:</span> <a href="tel:+44987065908">+44 987 065 908</a></div>
+                  <div class="contact__item"><span>Email:</span> <a href="mailto:info@Example.com">info@Example.com</a></div>
+                  <div class="contact__item"><span>Fax:</span> <a href="tel:+44987065908">+44 987 065 908</a></div> 
+                </div>
+              </div>
+              <div class="contact__form">
+                <form action="#" class="form">
+                  <div class="form__row">
+                    <div class="form__line">
+                      <div class="form__column">
+                        <input autocomplete="off" type="text" name="form[]" data-error="Error" data-value="Your Name" class="input form__input _req">
+                      </div>
+                      <div class="form__column">
+                        <input autocomplete="off" type="text" name="form[]" data-error="Error" data-value="Your Email" class="input form__input _req _email">
+                      </div>
+                    </div>
+                    <div class="form__line">
+                      <input autocomplete="off" type="text" name="form[]" data-error="Error" data-value="Your Title" class="input form__input _req">
+                    </div>
+                    <div class="form__line">
+                      <textarea data-error="Error" data-value="Your Comment" class="input form__input _req" cols="30" rows="10"></textarea>
+                    </div>  
+                  </div>
+                  <button type="submit" class="form__btn button">Send message</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section> 
+			</main>
+			@@include('_footer.html',{})
+		</div>
+		@@include('_popup.html',{})
+		@@include('_js.html',{})
+	</body>
+</html>

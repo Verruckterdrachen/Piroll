@@ -1675,6 +1675,61 @@ body.ie ._ibg img {
   }
 }
 
+.contact {
+  margin: 100px 0px 0px 0px;
+  transition: margin 0.3s ease 0s;
+  background-color: #f5f5f5;
+}
+@media (max-width: 767.98px) {
+  .contact {
+    margin: 70px 0px 0px 0px;
+  }
+}
+.contact__body {
+  display: flex;
+}
+@media (max-width: 767.98px) {
+  .contact__body {
+    flex-direction: column;
+  }
+}
+@media (min-width: 767.98px) {
+  .contact__content {
+    padding: 0px 11.1111111111% 0px 0px;
+  }
+}
+@media (max-width: 767.98px) {
+  .contact__content {
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+  }
+}
+.contact__form {
+  flex: 0 0 57.264957265%;
+}
+.contact__title {
+  margin: 0px 0px 25px 0px;
+}
+.contact__text {
+  margin: 0px 0px 50px 0px;
+}
+.contact__item {
+  line-height: 160%;
+  color: #787878;
+}
+.contact__item span {
+  flex: 1 1 auto;
+  color: #1d1d1d;
+  font-weight: 700;
+  padding: 0px 10px 0px 0px;
+}
+.contact__item a {
+  color: inherit;
+}
+.contact__item:not(:last-child) {
+  margin: 0px 0px 5px 0px;
+}
+
 .page {
   flex: 1 1 auto;
 }

@@ -1,0 +1,48 @@
+//====================================================================================================
+.contact {
+  margin: 100px 0px 0px 0px;
+  transition: margin 0.3s ease 0s;
+  @media (max-width:$md3+px){
+    margin: 70px 0px 0px 0px; 
+  }
+  background-color: $grayLightColor;
+  &__body {
+    display: flex;
+    @media (max-width:$md3+px){
+      flex-direction: column; 
+    }
+  }
+  &__content{
+    @media (min-width:$md3+px){
+      padding: 0px 130/1170 * 100% 0px 0px; 
+    }
+    @media (max-width:$md3+px){
+      text-align: center;
+      margin: 0px 0px 50px 0px; 
+    }
+  }
+  &__form {
+    flex: 0 0 670/1170 * 100%;
+  }
+  &__title {
+    margin: 0px 0px 25px 0px;
+  }
+  &__text {
+    margin: 0px 0px 50px 0px;
+  }
+  &__item {
+    line-height: 160%;
+    color: $grayColor;
+    span {
+      flex: 1 1 auto;
+      color: $mainColor;
+      font-weight: 700;
+      padding: 0px 10px 0px 0px; 
+    }
+    a {
+      color: inherit;
+    }
+    &:not(:last-child) {margin: 0px 0px 5px 0px;}
+  }
+}
+//====================================================================================================
