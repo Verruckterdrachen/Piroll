@@ -66,13 +66,18 @@ if (document.querySelector('.slider-testimonials__body')) {
     observer: true,
     observeParents: true,
     slidesPerView: 1,
-    autoHeight: false,
-    speed: 1200,
+    autoHeight: false,  
     parallax: true,
     loop: true,
     pagination: {
     	el: '.slider-testimonials__dotts',
     	clickable: true,
-    }
+    },
+    autoplay: {
+      delay: 2500, 
+      stopOnLastSlide: false, 
+      disableOnInteraction: false 
+    },
+    speed: 2000
   });
 }
