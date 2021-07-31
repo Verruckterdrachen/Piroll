@@ -83,6 +83,7 @@ body {
 @import "popup";
 @import "header";
 @import "footer";
+@import "main";
 @import "home";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
@@ -200,6 +201,18 @@ body {
     }
     :nth-child(8) {
       background-color: #dddddd;
+    }
+    :nth-child(9) {
+      background-color: $grayLightColor;
+    }
+    :nth-child(10) {
+      background-color: #838383;
+    }
+    :nth-child(11) {
+      background-color: #dddddd;
+    }
+    :nth-child(12) {
+      background-color: $grayLightColor;
     }
   }
   &__column {
